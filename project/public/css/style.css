@@ -1,0 +1,111 @@
+html, body {
+    height: 100%;
+}
+
+body, h1 {
+    margin: 0;
+    font-family: Arial;
+}
+
+h1 {
+    margin: 10px 0;
+    color: darkblue;
+}
+
+body {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: start;
+    -webkit-justify-content: flex-start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+}
+
+dl {
+
+    border: double;
+    padding: 1em;
+    display: block;
+    width: 80%;
+    margin-bottom: 20px;
+
+}
+
+dl + p {
+    display: none;
+}
+
+dl:empty {
+    display: none;
+}
+
+dl:empty + p {
+    color: red;
+    display: block;
+}
+
+dt a:hover {
+    color: #FF00CC;
+    cursor: pointer;
+}
+
+dt a {
+    font-family: Arial;
+    font-size: 1.5em;
+    color: #0000FF;
+    font-weight: 5px;
+    text-decoration: none;
+}
+
+dd {
+    font-family: verdana;
+    margin: 0 0 10px 55px;
+    font-size: 1em;
+}
+
+form {
+    background-color: darkslateblue;
+    color: white;
+    padding: 1em;
+    width: 80%;
+}
+
+input, button {
+    margin: 5px 1em;
+    padding: .5em;
+}
+
+input#name, input#address , input#desc{
+    width: 45%;
+    float: left;
+}
+
+button {
+    background-color: transparent;
+    outline: none;
+    border: solid 1px;
+    color: white;
+}
+
+button:hover {
+    color: yellow;
+}
+
+/************ Tour detail page **************/
+#desc-tour {
+    width: 80%;
+    background-color: #FFF8DC;
+    padding: 20px 10px;
+    border:  2px double black;
+}

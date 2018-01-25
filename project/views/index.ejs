@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <meta name="viewport" content="minimum-scale=1.0, width=device-width, maximum-scale=1.0, user-scalable=no"/>
+    <meta charset="utf-8">
+
+    <title>Tourist Destination</title>
+
+    <link rel="stylesheet" href="../css/style.css"/>
+
+</head>
+<body>
+
+    <h1>Tourist Destination</h1>
+    <dl>
+    <% for (var i = 0; i < tours.length;i++){ %>
+           <dt><a href="<%= tours[i].url %>"><%= tours[i].name %></a> </dt>
+           <dd><%= tours[i].desc %> </dd>
+           <dd><%= tours[i].address %> </dd> 
+    <% } %>
+    </dl>
+
+    <form action="fileupload" method="post" enctype="multipart/form-data">
+        <input type="text" id="name" name="name" placeholder="New Tourist ..." required />
+        <input type="text" id="address" name="address" placeholder="Address ..." required />
+        <input type="text" name="desc" id="desc" placeholder="Description ..." required />
+        <input type="file" name="fileUpload" id="fileUpload">
+        <!-- <img src="/image.png" /> -->
+        <button>Add Tourist Destination</button>
+    </form>
+
+    <script src="/js/jquery.min.js"></script>
+    <script src="/js/tour.js"></script>
+
+</body>
+</html>
